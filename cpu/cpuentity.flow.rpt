@@ -1,0 +1,112 @@
+Flow report for cpuentity
+Fri Feb 03 08:34:09 2006
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------+
+; Flow Summary                                                       ;
++-------------------------+------------------------------------------+
+; Flow Status             ; Successful - Fri Feb 03 08:34:08 2006    ;
+; Quartus II Version      ; 9.0 Build 132 02/25/2009 SJ Full Version ;
+; Revision Name           ; cpuentity                                ;
+; Top-level Entity Name   ; CPUEntity                                ;
+; Family                  ; Cyclone                                  ;
+; Device                  ; EP1C12Q240C8                             ;
+; Timing Models           ; Final                                    ;
+; Met timing requirements ; Yes                                      ;
+; Total logic elements    ; 4,203 / 12,060 ( 35 % )                  ;
+; Total pins              ; 34 / 173 ( 20 % )                        ;
+; Total virtual pins      ; 0                                        ;
+; Total memory bits       ; 0 / 239,616 ( 0 % )                      ;
+; Total PLLs              ; 0 / 2 ( 0 % )                            ;
++-------------------------+------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 02/03/2006 08:32:19 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; cpuentity           ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                          ;
++-----------------------+------------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name       ; Value                                                                  ; Default Value ; Entity Name ; Section Id ;
++-----------------------+------------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID ; 120892481177.113892673903840                                           ; --            ; --          ; --         ;
+; MISC_FILE             ; F:/CPU实验5级流水final/CPU实验5级流水无cache参考代码/cpu/cpuentity.dpf ; --            ; --          ; --         ;
++-----------------------+------------------------------------------------------------------------+---------------+-------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis    ; 00:00:31     ; 1.0                     ; 196 MB              ; 00:00:21                           ;
+; Fitter                  ; 00:00:32     ; 1.1                     ; 209 MB              ; 00:00:30                           ;
+; Assembler               ; 00:00:06     ; 1.0                     ; 176 MB              ; 00:00:04                           ;
+; Classic Timing Analyzer ; 00:00:32     ; 1.0                     ; 133 MB              ; 00:00:13                           ;
+; Total                   ; 00:01:41     ; --                      ; --                  ; 00:01:08                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                       ;
++-------------------------+------------------+------------+------------+----------------+
+; Module Name             ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++-------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis    ; n93424           ; Windows XP ; 5.1        ; i686           ;
+; Fitter                  ; n93424           ; Windows XP ; 5.1        ; i686           ;
+; Assembler               ; n93424           ; Windows XP ; 5.1        ; i686           ;
+; Classic Timing Analyzer ; n93424           ; Windows XP ; 5.1        ; i686           ;
++-------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off cpuentity -c cpuentity
+quartus_fit --read_settings_files=off --write_settings_files=off cpuentity -c cpuentity
+quartus_asm --read_settings_files=off --write_settings_files=off cpuentity -c cpuentity
+quartus_tan --read_settings_files=off --write_settings_files=off cpuentity -c cpuentity --timing_analysis_only
+
+
+

@@ -1,0 +1,92 @@
+# Copyright (C) 1991-2005 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic       
+# functions, and any output files any of the foregoing           
+# (including device programming or simulation files), and any    
+# associated documentation or information are expressly subject  
+# to the terms and conditions of the Altera Program License      
+# Subscription Agreement, Altera MegaCore Function License       
+# Agreement, or other applicable license agreement, including,   
+# without limitation, that your use is for the sole purpose of   
+# programming logic devices manufactured by Altera and sold by   
+# Altera or its authorized distributors.  Please refer to the    
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		cpuentity_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 4.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:43:57  AUGUST 08, 2005"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
+set_global_assignment -name VHDL_FILE unitpack.vhd
+set_global_assignment -name VHDL_FILE cpuentity.vhd
+set_global_assignment -name VHDL_FILE addr_muxentity.vhd
+set_global_assignment -name VHDL_FILE exentity.vhd
+set_global_assignment -name VHDL_FILE forwardingentity.vhd
+set_global_assignment -name VHDL_FILE hazarddetectentity.vhd
+set_global_assignment -name VHDL_FILE identity.vhd
+set_global_assignment -name VHDL_FILE ifentity.vhd
+set_global_assignment -name VHDL_FILE memaccessentity.vhd
+set_global_assignment -name VHDL_FILE ../asynram.vhd
+set_global_assignment -name VHDL_FILE asynram.vhd
+
+# Pin & Location Assignments
+# ==========================
+set_location_assignment PIN_158 -to RegOut[0]
+set_location_assignment PIN_159 -to RegOut[1]
+set_location_assignment PIN_160 -to RegOut[2]
+set_location_assignment PIN_161 -to RegOut[3]
+set_location_assignment PIN_162 -to RegOut[4]
+set_location_assignment PIN_163 -to RegOut[5]
+set_location_assignment PIN_164 -to RegOut[6]
+set_location_assignment PIN_165 -to RegOut[7]
+set_location_assignment PIN_12 -to RegSel[0]
+set_location_assignment PIN_13 -to RegSel[1]
+set_location_assignment PIN_14 -to RegSel[2]
+set_location_assignment PIN_29 -to clk
+set_location_assignment PIN_83 -to flag[0]
+set_location_assignment PIN_84 -to flag[1]
+set_location_assignment PIN_85 -to flag[2]
+set_location_assignment PIN_86 -to flag[3]
+set_location_assignment PIN_41 -to memAddr[0]
+set_location_assignment PIN_42 -to memAddr[1]
+set_location_assignment PIN_43 -to memAddr[2]
+set_location_assignment PIN_44 -to memAddr[3]
+set_location_assignment PIN_45 -to memAddr[4]
+set_location_assignment PIN_46 -to memAddr[5]
+set_location_assignment PIN_47 -to memAddr[6]
+set_location_assignment PIN_48 -to memAddr[7]
+set_location_assignment PIN_240 -to reset
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY Cyclone
+set_global_assignment -name TOP_LEVEL_ENTITY CPUEntity
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP1C12Q240C8
+
+set_global_assignment -name MISC_FILE "F:/CPU实验5级流水final/CPU实验5级流水无cache参考代码/cpu/cpuentity.dpf"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_173 -to outDB[0]
+set_location_assignment PIN_174 -to outDB[1]
+set_location_assignment PIN_175 -to outDB[2]
+set_location_assignment PIN_177 -to outDB[3]
+set_location_assignment PIN_178 -to outDB[4]
+set_location_assignment PIN_179 -to outDB[5]
+set_location_assignment PIN_180 -to outDB[6]
+set_location_assignment PIN_181 -to outDB[7]

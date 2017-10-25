@@ -1,0 +1,616 @@
+Version 9.0 Build 132 02/25/2009 SJ Full Version
+41
+2988
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+ForwardingEntity
+# storage
+db|cpuentity.(6).cnf
+db|cpuentity.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+forwardingentity.vhd
+99dcd448debb2a4d886ae7732bed9d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(m_sa)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_sa)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_sa)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_sb)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(forwarda)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(forwardb)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ForwardingEntity:ForwardUnit
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+IFEntity
+# storage
+db|cpuentity.(1).cnf
+db|cpuentity.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ifentity.vhd
+53bfec49181e9246780868ad4cea1fb
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(e_setflag)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(pcplusoffset)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(outerdb)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(pc_addr)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_pcinc1)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_ir)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+unitpack.vhd
+994a73d1115e5e7e2efcb562b5c44420
+}
+# hierarchies {
+IFEntity:IFUnit
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+IDEntity
+# storage
+db|cpuentity.(2).cnf
+db|cpuentity.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+identity.vhd
+0d7bad50e9b8601425a74d68d4c758
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(d_ir)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_pcinc1)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_wbdata)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_destreg)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_sa)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_sb)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(i_pcplusoffset)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_raout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_rbout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_imm)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_alusrc)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_aluopr)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_setflag)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_wrmem)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_destreg)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(regsel)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(regout)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+unitpack.vhd
+994a73d1115e5e7e2efcb562b5c44420
+}
+# hierarchies {
+IDEntity:IDUnit
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ExEntity
+# storage
+db|cpuentity.(3).cnf
+db|cpuentity.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+exentity.vhd
+442a6fbe67b8b7d2e7882f72f9fc4b6c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(e_raout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_rbout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_alusrc)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_aluopr)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_setflag)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_imm)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(forwarda)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(forwardb)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_sa)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_sa)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_aluout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_wbdata)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_aluout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_rbdata)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_flag)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_destreg)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_destreg)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(e_wrmem)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_wrmem)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+unitpack.vhd
+994a73d1115e5e7e2efcb562b5c44420
+}
+# hierarchies {
+ExEntity:ExUnit
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+MemAccessEntity
+# storage
+db|cpuentity.(5).cnf
+db|cpuentity.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+memaccessentity.vhd
+109acebc7ab54d3ac5b76e74b23bdf53
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(m_wrmem)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_wrmem)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_aluout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_rbdata)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(indb)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(outdb)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_aluout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_memout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_flag)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_flag)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(pc)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(addr)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_sa)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_sa)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(m_destreg)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_destreg)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+unitpack.vhd
+994a73d1115e5e7e2efcb562b5c44420
+}
+# hierarchies {
+MemAccessEntity:MemAccessUnit
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+HazardDetectEntity
+# storage
+db|cpuentity.(7).cnf
+db|cpuentity.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hazarddetectentity.vhd
+b7d6186e5253a7a77156df978dc13c7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(m_wrmem)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(w_wrmem)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_ir)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+unitpack.vhd
+994a73d1115e5e7e2efcb562b5c44420
+}
+# hierarchies {
+HazardDetectEntity:HDUnit
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+asynram
+# storage
+db|cpuentity.(4).cnf
+db|cpuentity.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+asynram.vhd
+16ed70f430d5c6467a447e96e985ba53
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ram_width
+8
+PARAMETER_SIGNED_DEC
+DEF
+adr_width
+8
+PARAMETER_SIGNED_DEC
+DEF
+ constraint(din)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(dout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(adr)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+unitpack.vhd
+994a73d1115e5e7e2efcb562b5c44420
+}
+# hierarchies {
+asynram:AsynramAccessUnit
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+CPUEntity
+# storage
+db|cpuentity.(0).cnf
+db|cpuentity.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cpuentity.vhd
+7eac9fd08d1c36cb475555f853f7c7d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+unitpack.vhd
+994a73d1115e5e7e2efcb562b5c44420
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+
